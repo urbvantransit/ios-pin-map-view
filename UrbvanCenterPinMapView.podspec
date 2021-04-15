@@ -8,7 +8,7 @@ s.summary = "UrbvanCenterPinMapView makes it easy for you to use a MKMapView wit
 s.requires_arc = true
 
 # Versioning
-s.version = "0.1.2"
+s.version = "0.1"
 
 # License
 s.license = { :type => "MIT", :file => "LICENSE" }
