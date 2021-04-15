@@ -1,10 +1,10 @@
-# DSCenterPinMapView
+# UrbvanCenterPinMapView
 
 [![Supports](https://img.shields.io/badge/supports-CocoaPods%20-green.svg?style=flat)]()
-[![Version](https://img.shields.io/cocoapods/v/DSCenterPinMapView.svg?style=flat)](http://cocoapods.org/pods/DSCenterPinMapView)
-[![License](https://img.shields.io/cocoapods/l/DSCenterPinMapView.svg?style=flat)](http://cocoapods.org/pods/DSCenterPinMapView)
+[![Version](https://img.shields.io/cocoapods/v/UrbvanCenterPinMapView.svg?style=flat)](http://cocoapods.org/pods/UrbvanCenterPinMapView)
+[![License](https://img.shields.io/cocoapods/l/UrbvanCenterPinMapView.svg?style=flat)](http://cocoapods.org/pods/UrbvanCenterPinMapView)
 [![Language](https://img.shields.io/badge/language-Swift-orange.svg?style=flat)]()
-[![Platform](https://img.shields.io/cocoapods/p/DSCenterPinMapView.svg?style=flat)](http://cocoapods.org/pods/DSCenterPinMapView)
+[![Platform](https://img.shields.io/cocoapods/p/UrbvanCenterPinMapView.svg?style=flat)](http://cocoapods.org/pods/UrbvanCenterPinMapView)
 <br />
 
 ## Examples
@@ -17,23 +17,23 @@
 
 ## Installation
 
-DSCenterPinMapView is available through [CocoaPods](http://cocoapods.org). To install
+UrbvanCenterPinMapView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'DSCenterPinMapView'
+pod 'UrbvanCenterPinMapView'
 ```
 ## Usage
 
-1. Change the class of a view from UIView to DSCenterPinMapView 
+1. Change the class of a view from UIView to UrbvanCenterPinMapView 
 2. Programmatically:
 
 ```
-let pinMapView = DSCenterPinMapView(frame: myFrame)
+let pinMapView = UrbvanCenterPinMapView(frame: myFrame)
 ```
 
 ```
-let pinMapView = DSCenterPinMapView(frame: myFrame)
+let pinMapView = UrbvanCenterPinMapView(frame: myFrame)
 ```
 
 ## Customization 
@@ -74,11 +74,11 @@ pinMapView.shadowOffsetY = 10
 If you would like to know if map is being moved
 
 #### Delegate
-You can implement DSCenterPinMapView delegate to implement your own didStartDragging and didEndDragging functionality.
+You can implement UrbvanCenterPinMapView delegate to implement your own didStartDragging and didEndDragging functionality.
 ```swift
 pinMapView.delegate = self
 
-extension MyViewController: DSCenterPinMapViewDelegate {
+extension MyViewController: UrbvanCenterPinMapViewDelegate {
 
     func didStartDragging() {
         // My custom actions
@@ -93,7 +93,7 @@ extension MyViewController: DSCenterPinMapViewDelegate {
 
 ```
 
-You can also set your own MKMapView delegate while keeping DSCenterPinMapView core functionality by using updateDragging() un MKMapViewDelegate
+You can also set your own MKMapView delegate while keeping UrbvanCenterPinMapView core functionality by using updateDragging() un MKMapViewDelegate
 ```swift
 pinMapView.mapview.delegate = self
 
@@ -109,12 +109,12 @@ extension MyViewController: MKMapViewDelegate {
 
     func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
         // My custom implementation
-        pinMapView.updateDragging() // Place this code to keep DSCenterPinMapView delegate functionality
+        pinMapView.updateDragging() // Place this code to keep UrbvanCenterPinMapView delegate functionality
     }
 
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         // My custom implementation
-        pinMapView.updateDragging() // Place this code to keep DSCenterPinMapView delegate functionality
+        pinMapView.updateDragging() // Place this code to keep UrbvanCenterPinMapView delegate functionality
     }
 
 }
@@ -133,7 +133,7 @@ pinMapView.pin.pin.animationDuration = 0.8
 
 pinMapView.delegate = self
 
-extension MyViewController: DSCenterPinMapViewDelegate {
+extension MyViewController: UrbvanCenterPinMapViewDelegate {
 
     func didStartDragging() {
         // My custom actions
@@ -150,7 +150,7 @@ extension MyViewController: DSCenterPinMapViewDelegate {
 ```
 
 #### Centering Map
-You can center DSCenterPinMapView on your current location by using:
+You can center UrbvanCenterPinMapView on your current location by using:
 ```swift
 pinMapView.pinMapView.centerOnUserLocation()
 ```
@@ -175,8 +175,8 @@ to set a new center for the pin in a smooth transition.
 
 ## Author
 
-Daniel Esteban Salinas Suárez, danielesalinas23@gmail.com
+Daniel Esteban Salinas Suárez @Urbvan, danielesalinas23@gmail.com
 
 ## License
 
-DSCenterPinMapView is available under the MIT license. See the LICENSE file for more info.
+UrbvanCenterPinMapView is available under the MIT license. See the LICENSE file for more info.
