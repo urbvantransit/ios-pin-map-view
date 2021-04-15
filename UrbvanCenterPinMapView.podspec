@@ -3,8 +3,8 @@ Pod::Spec.new do |s|
 # Pod Information
 s.platform = :ios
 s.ios.deployment_target = '11.0'
-s.name = "DSCenterPinMapView"
-s.summary = "DSCenterPinMapView makes it easy for you to use a MKMapView with a central and animated pin to get locations."
+s.name = "UrbvanCenterPinMapView"
+s.summary = "UrbvanCenterPinMapView makes it easy for you to use a MKMapView with a central and animated pin to get locations."
 s.requires_arc = true
 
 # Versioning
@@ -17,20 +17,20 @@ s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Daniel Esteban Salinas" => "danielesalinas23@gmail.com" }
 
 # Pod Github URL
-s.homepage = "https://github.com/steve123s/DSCenterPinMapView"
+s.homepage = "https://github.com/urbvantransit/ios-pin-map-view"
 
 # Source
-s.source = { :git => "https://github.com/steve123s/DSCenterPinMapView.git",
+s.source = { :git => "https://github.com/urbvantransit/ios-pin-map-view.git",
              :tag => "#{s.version}" }
 
 # Framework and Dependencies (Other Pods)
 s.frameworks = "UIKit", "MapKit"
 
 # Source Files
-s.source_files = "DSCenterPinMapView/**/*.{swift}"
+s.source_files = "UrbvanCenterPinMapView/**/*.{swift}"
 
 # Resources
-s.resources = "DSCenterPinMapView/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+s.resources = "UrbvanCenterPinMapView/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
 # Swift Version
 s.swift_version = "5"
